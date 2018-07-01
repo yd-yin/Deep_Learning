@@ -1,4 +1,4 @@
-# ZJU_Summer_School
+# Deep Learning
 1. LeNet5  
 Gradient-Based Learning Applied to Document Recognition
 2. AlexNet  
