@@ -28,7 +28,7 @@ data_test = MNIST(root='./pytorch_data/mnist', train=False, download=False,
 
 # 迭代器
 ```python
-data_train_loader = DataLoader(data_train, batch_size=256)
-data_test_loader = DataLoader(data_test, batch_size=256)
+data_train_loader = DataLoader(data_train, batch_size=256, shuffle=True)
+data_test_loader = DataLoader(data_test, batch_size=256, shuffle=False)
 ```
 [Dataloader官方文档](http://pytorch-cn.readthedocs.io/zh/latest/package_references/data/)
