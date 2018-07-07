@@ -21,9 +21,10 @@ class LeNet5(nn.Module):
         )
         self.fc = nn.Sequential(
             nn.Linear(120, 84),
-            nn.ReLU(),
+            nn.Tanh(),
+            # nn.ReLU(),
             nn.Linear(84, 10),
-            nn.LogSoftmax(dim=1)
+            nn.LogSoftmax(dim=1)    # 0-dim是batchsize，1-dim是真正的数据，在1-dim进行logsoftmax操作
         )
 
     def forward(self, img):
