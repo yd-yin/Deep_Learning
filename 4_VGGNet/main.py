@@ -3,7 +3,6 @@ import torch.nn as nn
 from torch.utils.data.dataloader import DataLoader
 import torchvision.transforms.transforms as transforms
 from torchvision.datasets.folder import ImageFolder
-from Nets import VGGNetA
 from Nets1 import VGGNet
 
 # 1. Load the data
